@@ -11,7 +11,7 @@ import Login from './Pages/Login/Login';
 
 function App() {
   return (
-    <div>
+    <div className='max-w-8xl mx-auto'>
       <Navbar></Navbar>
       <Routes>
         <Route path="/" element={<Home></Home>}/>

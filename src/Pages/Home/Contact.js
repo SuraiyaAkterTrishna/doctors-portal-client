@@ -8,7 +8,7 @@ const Contact = () => {
         }} className='flex justify-center'>
             <div className='p-16'>
                 <div className='text-center py-4'>
-                    <h3 className='text-xl text-primary'>Contact Us</h3>
+                    <h3 className='text-xl text-secondary'>Contact Us</h3>
                     <h2 className='text-3xl text-white'>Stay connected with us</h2>
                 </div>
                 <div>

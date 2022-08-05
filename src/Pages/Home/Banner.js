@@ -4,8 +4,8 @@ import PrimaryButton from '../Shared/PrimaryButton';
 import './Banner.css';
 const Banner = () => {
     return (
-            <div className="hero min-h-screen">
-                <div className="hero-content flex-col lg:flex-row-reverse chair-bg p-16">
+            <div className="hero min-h-screen chair-bg">
+                <div className="hero-content flex-col lg:flex-row-reverse">
                     <img src={chair} className="max-w-sm rounded-lg shadow-2xl" />
                     <div className='p-2'>
                         <h1 className="text-5xl font-bold">Your New Smile Starts Here</h1>

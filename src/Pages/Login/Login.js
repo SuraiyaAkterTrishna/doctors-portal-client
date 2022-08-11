@@ -15,12 +15,12 @@ const Login = () => {
     
     let signInError;
 
-    if(loading || gLoading){
+    if(true || loading || gLoading){
         return <button class="btn loading">loading</button>;
     }
 
     if(error || gError){
-        signInError = <p><small>{error?.message || gError?.message}</small></p>
+        signInError = <p className='text-red-500'><small>{error?.message || gError?.message}</small></p>
     }
     if(gUser){
         console.log(gUser);
@@ -90,7 +90,7 @@ const Login = () => {
 
                             </label>
                         </div>
-                        {signInError};
+                        {signInError}
                         <input className='btn w-full max-w-xs text-white' type="submit" value="Login" />
                     </form>
                     <div className="divider">OR</div>

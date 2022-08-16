@@ -9,6 +9,7 @@ import Reviews from './Pages/Reviews/Reviews';
 import Contact from './Pages/Contact/Contact';
 import Login from './Pages/Login/Login';
 import SignUp from './Pages/Login/SignUp';
+import RequireAuth from './Pages/Login/RequireAuth';
 
 function App() {
   return (
@@ -17,7 +18,11 @@ function App() {
       <Routes>
         <Route path="/" element={<Home></Home>}/>
         <Route path="/about" element={<About></About>}/>
-        <Route path="/appointment" element={<Appointment></Appointment>}/>
+        <Route path="/appointment" element={
+          <RequireAuth>
+            <Appointment></Appointment>
+          </RequireAuth>
+        }/>
         <Route path="/reviews" element={<Reviews></Reviews>}/>
         <Route path="/contact" element={<Contact></Contact>}/>
         <Route path="/login" element={<Login></Login>}/>
